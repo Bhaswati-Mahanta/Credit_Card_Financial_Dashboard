@@ -1,13 +1,13 @@
-# Credit_Card_Financial_Dashboard
+# Credit_Card_Financial_weekly_Dashboard
 
 # Problem Statement :
 
-To develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
+This project focuses on the creation of a realtime comprehensive credit card weekly dashboard that provides stakeholders with key insights into the operations and trends of a credit card and portfolio. The goal is to offer detailed metrics and help in analyzing credit card usage patterns, revenue generation, customer behavior and overall portfolio health.
 
 Steps followed
 
 Step 1 : Created two tables in PgAdmin PosgresSql tools and imported the data from a CSV file.
-for creating Credit Card Transaction Table, the following DAX expression was written;
+for creating Credit Card Transaction Table, the following Sql query was written;
 
     CREATE TABLE credit_card (
 Client_Num INT,
@@ -30,7 +30,7 @@ Interest_Earned DECIMAL(10,3),
 Delinquent_Acc VARCHAR(5)
 );
 
-For creating Credit Card Customer Table, the following DAX expression was written;
+For creating Credit Card Customer Table, the following sql query was written;
 
     CREATE TABLE customer(
 Client_Num INT,
