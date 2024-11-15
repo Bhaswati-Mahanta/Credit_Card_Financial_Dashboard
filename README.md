@@ -9,7 +9,7 @@ Steps followed
 Step 1 : Created two tables in PgAdmin PosgresSql tools and imported the data from a CSV file.
 for creating Credit Card Transaction Table, the following Sql query was written;
 
-    CREATE TABLE credit_card (
+    CREATE TABLE cc_detail (
 Client_Num INT,
 Card_Category VARCHAR(20),
 Annual_Fees INT,
@@ -32,7 +32,7 @@ Delinquent_Acc VARCHAR(5)
 
 For creating Credit Card Customer Table, the following sql query was written;
 
-    CREATE TABLE customer(
+    CREATE TABLE cust_detail(
 Client_Num INT,
 Customer_Age INT,
 Gender VARCHAR(5),
@@ -49,6 +49,12 @@ Customer_Job VARCHAR(50),
 Income INT,
 Cust_Satisfaction_Score INT
 );
+After creating two table i imported the csv files of customer and credit card into the cc_detail and cust_detail through sql query.
+The following Sql query was written;
+Copy cc_detail
+from 'C:\Users\USER\Downloads\credit_card.csv'
+DELIMITER ','
+CSV HEADER;
 
 Step 2 : Load data into Power BI Desktop, connecting through PosgresSql Database.
 
