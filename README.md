@@ -49,6 +49,7 @@ Customer_Job VARCHAR(50),
 Income INT,
 Cust_Satisfaction_Score INT
 );
+
 After creating two table i imported the csv files of customer and credit card into the cc_detail and cust_detail through sql query.
 The following Sql query was written;
 Copy cc_detail
